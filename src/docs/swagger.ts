@@ -14,8 +14,7 @@ export async function registerSwagger(app: FastifyInstance) {
         version: '1.0.0',
       },
       servers: [
-        { url: ENV.DEV_HOST, description: 'dev server' },
-        { url: ENV.LOCAL_HOST, description: 'Local server' },
+        { url: ENV.SWAGGER_HOST, description: 'api server' },
       ],
       components: {
         securitySchemes: {

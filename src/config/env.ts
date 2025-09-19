@@ -4,8 +4,7 @@ dotenv.config({ path: envFile });
 
 export const ENV = {
   HOST: process.env.HOST || '127.0.0.1',
-  LOCAL_HOST: process.env.LOCAL_HOST,
-  DEV_HOST: process.env.DEV_HOST,
+  SWAGGER_HOST: process.env.SWAGGER_HOST,
   PORT: process.env.PORT || '3000',
   DB_HOST: process.env.DB_HOST || 'localhost',
   DB_PORT: process.env.DB_PORT || '5432',
