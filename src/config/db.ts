@@ -14,6 +14,6 @@ export const AppDataSource = new DataSource({
   password: ENV.DB_PASS,
   database: ENV.DB_NAME,
   entities: [User, SwaggerUser],
-  synchronize: process.env.NODE_ENV !== 'production',
+  synchronize: true,
   logging: false,
 });
