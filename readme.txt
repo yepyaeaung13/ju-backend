@@ -1,0 +1,1 @@
+pnpm dlx typeorm-ts-node-commonjs migration:generate src/migration/InitUserTables -d src/config/db.ts
