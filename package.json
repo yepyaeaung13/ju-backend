@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "NODE_ENV=development ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
-    "start": "pnpm typeorm && NODE_ENV=production node dist/server.js",
+    "start": "npm run typeorm && NODE_ENV=production node dist/server.js",
     "typeorm": "typeorm-ts-node-commonjs migration:run -d src/config/db.ts"
   },
   "dependencies": {
