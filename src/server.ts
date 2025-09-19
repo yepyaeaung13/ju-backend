@@ -9,8 +9,8 @@ async function bootstrap() {
     console.log("📦 Database connected");
 
     // 2. Run migrations (optional, for production instead of sync)
-    // await AppDataSource.runMigrations();
-    // console.log("🛠️ Migrations executed");
+    await AppDataSource.runMigrations();
+    console.log("🛠️ Migrations executed");
 
     // 3. Init Fastify
     const app = await setupApp();
